@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+import(minpack.lm)
+import(numDeriv)
+importFrom("graphics", "curve", "par", "plot")
+importFrom("stats", "optim", "qnorm")
