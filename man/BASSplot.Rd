@@ -1,21 +1,18 @@
 \name{BASS.plot}
 \alias{BASS.plot}
 \title{Function that draws the plot of Bass model}
-\description{Function that draws the plot of Bass model.
-}
+\description{Function that draws the plot of a standard Bass model.}
 
 \usage{
 BASS.plot(data)
 }
 
 \arguments{
-\item{data}{result of BASS.standard.generator}
+\item{data}{Result of BASS.standard.generator}
 }
 
 \author{
-Zanghi Federico \email{federico.zanghi@studenti.unipd.it}
-Department of Statistics, University of Padova, Italy \url{http://www.unipd.it}
-}
+Zanghi Federico \email{federico.zanghi.11@gmail.com}}
 
 
 \examples{
@@ -36,6 +33,8 @@ BASS.plot(data)
 \code{\link{BASS.generalized}}
 
 \code{\link{GG.model}}
+
+\code{\link{UCRCD}}
 
 }
 

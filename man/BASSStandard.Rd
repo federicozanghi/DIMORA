@@ -1,28 +1,27 @@
 \name{BASS.standard}
 \alias{BASS.standard}
-\title{Function that returns estimate parameters of bass standard model and the plot}
-\description{This function allows you to calculate the parameters of the bass model in 2 different ways:
-using nls or using optim(which minimize the residual squared sum).
+\title{Function that estimates a standard Bass model}
+\description{This function allows to estimate the parameters of a standard Bass model, BM, (Bass, 1969) by using two different methods: nonlinear least squares, NLS, or OPTIM, which minimizes the residual sum of squares.
 }
 
 
 \usage{
-BASS.standard(sales,method,prelimestimates,alpha,display)
+BASS.standard(sales, method = "nls", prelimestimates = c(sum(sales) +
+              100, 0.01, 0.1), ous= 100, alpha = 0.05, display = T, max.iter = 100)
 }
 
 \arguments{
-\item{sales}{The istantanuous sales}
-\item{method}{The way you decide to estimate parameters, 'nlm' or 'optim'}
-\item{prelimestimates}{A vector containing the starting values, that the algorithm use to estimate the parameters, the default values are: m = sum(sales)+100, p = 0.01, q = 0.1 }
-\item{alpha}{The significativity level for confidence intervals}
-\item{display}{T or F if you want to display the graphs of the models or not, the default value is T}
+\item{sales}{Instantaneous sales }
+\item{method}{Method for parameter estimation, 'nls' or 'optim'}
+\item{prelimestimates}{A vector containing the starting values for parameter estimation. Default values are m = sum(sales)+100, p = 0.01, q = 0.1}
+\item{alpha}{Significance level for confidence intervals}
+\item{display}{T or F, to display the plot of the model or not, the default value is T}
+\item{ous}{Numeric value for the out-of-sample forecasts, the default value is 100}
+\item{max.iter}{Maximum number of iterations, the default value is 100. This option works only with method="nls"}
 }
 
 \author{
-Zanghi Federico \email{federico.zanghi@studenti.unipd.it}
-Department of Statistics, University of Padova, Italy \url{http://www.unipd.it}
-}
-
+Zanghi Federico \email{federico.zanghi.11@gmail.com}}
 
 
 \examples{
@@ -42,6 +41,8 @@ BASS.standard(sales = Sales,method = 'nls')
 \code{\link{BASS.generalized}}
 
 \code{\link{GG.model}}
+
+\code{\link{UCRCD}}
 
 }
 

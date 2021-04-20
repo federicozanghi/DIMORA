@@ -1,3 +1,6 @@
 # DIMORA
 
-Al momento non esistono pacchetti R che permettano di analizzare facilmente i dati di diffusione sfruttando il modello di `BASS standard`, `BASS generalizzato` e il modello `Guseo-Guidolin` e più in generale il modello con `mercato potenziale variabile`. Quello che si propone con `DIMORA` (diffusion models R analisys) è un `pacchetto che in qualsiasi situazione riesca a stimare correttamente i parametri dei modelli senza perdita di generalità e con un output facilmente interpretabile ed il più informativo possibile`. I modelli implementati utilizzano i dati cumulati sia per quanto riguarda le stime che per il calcolo dei vari indici. Tuttavia solitamente i dati che abbiamo a disposizione sono dati istantanei, quindi ho ritenuto più opportuno passare alle funzioni del pacchetto quest’ultimi. Le funzioni poi calcoleranno in automatico i dati cumulati per procedere con le stime.
+**DIMORA** (**DI**ffusion **MO**dels **R** **A**nalysis) is a statistical package that allows the analysis of diffusion data using different models, among the most used and useful.
+The need for this package arises from the lack of a similar tool in R, the idea is therefore to provide a platform that allows the most in-depth analysis of the diffusion data.
+
+

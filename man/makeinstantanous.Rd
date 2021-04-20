@@ -1,21 +1,18 @@
 \name{make.instantaneous}
 \alias{make.instantaneous}
-\title{Function that transforms your data}
-\description{Function that transforms your cumulate data into instantaneous, this function can be usefull because all the function in this package reqire the istantanus data.}
+\title{Function that converts the data}
+\description{Function that turns cumulative values into instantaneous values. This function may be useful in some cases, since all procedures in this package are built using instantaneous data.}
 
 \usage{
 make.instantaneous(cumulate.data)
 }
 
 \arguments{
-\item{cumulate.data}{ The cumulate data}
+\item{cumulate.data}{Cumulative data}
 }
 
 \author{
-Zanghi Federico \email{federico.zanghi@studenti.unipd.it}
-Department of Statistics, University of Padova, Italy \url{http://www.unipd.it}
-}
-
+Zanghi Federico \email{federico.zanghi.11@gmail.com}}
 
 \examples{
 #Example 1
@@ -34,6 +31,8 @@ data.inst = make.instantaneous(cumulate.data)
 \code{\link{BASS.generalized}}
 
 \code{\link{GG.model}}
+
+\code{\link{UCRCD}}
 
 }
 
