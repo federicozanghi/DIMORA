@@ -1,6 +1,3 @@
-# DIMORA
+# DIMORA (**DI**ffusion **MO**dels **R** **A**nalysis) 
 
-**DIMORA** (**DI**ffusion **MO**dels **R** **A**nalysis) is a statistical package that allows the analysis of diffusion data using different models, among the most used and useful.
-The need for this package arises from the lack of a similar tool in R, the idea is therefore to provide a platform that allows the most in-depth analysis of the diffusion data.
-
-
+The implemented methods are: Bass model, Generalized Bass model (with rectangular shock, exponential shock, mixed shock and harmonic shock, 1 to 3 shocks available), Dynamic market potential model, and UCRCD model. The Bass model consists of a simple differential equation that describes the process of how new products get adopted in a population, the Generalized Bass model is a generalization of the Bass model with a function x(t), capturing the changing speed of diffusion. In some real processes the market potential may be not constant over time and a dynamic market potential model is needed. The GuseoGuidolin model is a specification of this situation. The UCRCD model (Unbalanced Competition and Regime Change Diachronic) is a diffusion model used to capture the dynamics of competition between two products within the same market.
